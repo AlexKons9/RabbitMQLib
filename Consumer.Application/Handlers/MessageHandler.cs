@@ -10,7 +10,7 @@ namespace Consumer.Application.Handlers
     public class MessageHandler : IMessageHandler
     {
         private readonly IServiceScopeFactory _provider;
-
+         
         public MessageHandler(IServiceScopeFactory provider)
         {
             _provider = provider;

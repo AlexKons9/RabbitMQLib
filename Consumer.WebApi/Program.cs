@@ -10,13 +10,14 @@ namespace Consumer.WebApi
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            string hostname = builder.Configuration.GetSection("RabbitMQSettings").GetSection("HostName").Value;
 
             // Add services to the container.
 
             builder.Services.AddControllers();
             builder.Services.AddApplication();
             builder.Services.AddInfrastructure();
-            builder.Services.AddRPCServerMessageBroker("localhost", "queue_rpc");
+            builder.Services.AddRPCServerMessageBroker(hostname, "queue_rpc");
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
