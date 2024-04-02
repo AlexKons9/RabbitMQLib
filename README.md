@@ -6,8 +6,7 @@ This project demonstrates a client-server architecture using RabbitMQ messaging 
 
 1. [Overview](#overview)
 2. [Usage](#usage)
-3. [Integration](#integration)
-4. [License](#license)
+3. [License](#license)
 
 ## Overview
 
