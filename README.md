@@ -80,15 +80,7 @@ This project consists of two ASP.NET Web API applications:
         "hasError": false,
         "errorDescription": null
       }
-      ```
-
-## Integration
-
-If you want to use this project in your own projects, follow these steps:
-
-1. 
-2. 
-3. 
+      ``` 
 
 ## License
 
